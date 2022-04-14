@@ -1,0 +1,594 @@
+//@import '../../node_modules/normalize.css/normalize'
+@import '../libs/bootstrap/bootstrap-reboot.min'
+@import '../libs/bootstrap/bootstrap-grid.min'
+//@import '../../node_modules/slick-carousel/slick/slick'
+@import '../css/magnific-popup'
+@import '../css/animate'
+
+
+@font-face 
+    font-family: 'Font Awesome'
+    src: url('../fonts/fontawesome/fa-solid-900.ttf')
+    src: url('../fonts/fontawesome/fa-solid-900.eot')
+    src: url('../fonts/fontawesome/fa-solid-900.svg')
+    src: url('../fonts/fontawesome/fa-solid-900.woff')
+    src: url('../fonts/fontawesome/fa-solid-900.woff2')
+
+
+
+
+
+$cyan: #009EE0
+$accent: #FF4242
+$lightAccent: #FF7171
+$textColor: #585D62
+
+$roboto: 'Roboto', sans-serif
+
+
+html
+    font-size: 16px
+
+body
+    font-family: $roboto
+
+section
+    margin-top: 80px
+
+#modal
+    padding: 5px
+    display: none
+    max-width: 380px
+
+.modal__form
+    max-width: 380px
+    width: 100%
+
+//Back to top button
+
+#button 
+  display: flex
+  justify-content: center
+  background-color: $accent
+  width: 50px
+  height: 50px
+  border-radius: 2px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color .3s, opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+
+#button::after 
+  content: "\f077"
+  font-family: FontAwesome
+  font-weight: normal
+  font-style: normal
+  font-size: 2em
+  line-height: 50px
+  color: #fff
+
+#button:hover 
+  cursor: pointer
+  background-color: #333
+
+#button:active 
+  background-color: #555
+
+#button.show 
+  opacity: 1
+  visibility: visible
+
+
+//site content
+
+.hamburger
+    position: fixed
+    right: 0
+    z-index: 9999
+
+.section__title
+    font-size: 1.5rem
+    font-weight: 900
+    color: $textColor
+    text-align: center
+
+.section__description
+    font-size: 1rem
+    font-weight: 400
+    color: $textColor
+    text-align: center
+    margin-bottom: 60px
+
+.header
+    font-size: 0.857rem
+    color: #ffffff
+    
+
+.header__top
+    background-color: $cyan
+    .header__phone
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    .phone
+        display: flex
+        align-items: center
+        font-weight: 500
+        span
+            margin-right: 6px
+            color: #fff
+        a
+            line-height: 35px
+            color: #fff
+            text-decoration: none
+        &:first-child
+            padding-right: 12px
+            position: relative
+            &:after
+                content: '|'
+                color: #fff
+                font-weight: 500
+                position: absolute
+                right: 0
+        &:last-child
+            padding-left: 12px
+    
+    .header__location
+        font-size: 0.875rem
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        a
+            color: #fff
+            line-height: 35px
+            text-decoration: none
+        span
+            margin-right: 6px
+    .header__social
+        display: flex
+        justify-content: space-between
+        align-items: center
+        line-height: 35px
+        a
+            color: #fff
+    .header__language
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        line-height: 35px
+        a
+            text-transform: uppercase
+            text-decoration: none
+            font-weight: 500
+            color: #ffffff
+        span
+            margin-right: 6px
+
+.sticky-wrapper
+    position: relative !important
+    z-index: 99 !important
+
+.header__nav
+    background-color: #fff
+    display: flex
+    align-items: center
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+    position: relative
+    // z-index: 999
+    .header__logo
+        display: block
+        line-height: 80px
+    .header__menu-items
+        display: flex
+        justify-content: space-between
+        line-height: 5rem
+        list-style: none
+        margin: 0
+        padding: 0
+        .header__menu-item
+            text-transform: uppercase
+            cursor: pointer
+            a
+                color: $textColor
+                text-decoration: none
+                font-weight: 700
+                padding: 40px 0
+            &:hover a, &:focus a, &:active a
+                color: $cyan
+                transition: all .25s ease
+    .header__callback
+        width: 100%
+        .header__callback-btn
+            width: 100%
+            background-color: transparent
+            border: 1px solid $lightAccent
+            outline: none
+            color: $lightAccent
+            font-size: 0.875rem
+            text-transform: uppercase   
+            font-weight: 900
+            line-height: 2.1875rem
+            letter-spacing: 0.12rem
+            cursor: pointer
+            &:hover, &:focus, &:active
+                background-color: $lightAccent
+                color: #ffffff
+                transition: all .25s ease
+    &-btn
+        position: absolute
+        right: 8px
+        top: 50%
+        transform: translateY(-50%)
+        border: none
+        background-color: transparent
+        font-size: 1.25rem
+        color: $textColor
+        outline: none
+        z-index: 99
+        display: none
+
+.header__slider
+    position: relative
+
+    .slider
+        position: relative
+        z-index: -2
+        &__item
+            background-repeat: no-repeat
+            background-position: center top
+            background-size: cover
+            background-color: $cyan
+
+    .slick-initialized .slick-slide
+        height: 96vh
+
+    .offer-wrapper
+        position: absolute
+        height: auto
+        width: 100%
+        top: 0
+        left: 0
+        padding-top: 160px
+
+    .offer
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        width: 100%
+        // position: absolute
+        // right: 0
+        // bottom: 50%
+        // transform: translateY(0)
+        // z-index: 1
+        &__title
+            display: flex
+            justify-content: flex-end
+            text-align: right
+            font-size: 2.75rem
+            font-weight: 900
+            line-height: 3.5rem
+            margin: 0
+            text-shadow: -2px 3px 4px rgba(0, 0, 0, 0.75)
+        &__description
+            font-size: 1.35rem
+            font-weight: 700
+            line-height: 2.3rem
+            text-align: right
+            padding-top: 0.9375rem
+            text-shadow: -2px 3px 4px rgba(0, 0, 0, 0.9)
+        &__submit
+            display: flex
+            justify-content: flex-end
+            margin-top: 100px
+            &-btn
+                width: 290px
+                border: none
+                background-color: $accent
+                color: #ffffff
+                font-size: 0.875rem
+                font-weight: 900
+                letter-spacing: 0.1rem
+                text-transform: uppercase
+                line-height: 2.5rem
+                box-shadow: 0px 0px 15px rgba(255, 66, 66, 0.5)
+
+// Section Applaying
+
+.applying
+    padding-bottom: 80px
+    background-repeat: no-repeat
+    background-position: right bottom
+    background-size: 45%
+    // position: absolute
+    // z-index: -1
+    // left: 0
+    // right: 0
+
+.applaying__accordian
+    h3
+        text-transform: uppercase
+        font-weight: 700
+
+.accordion__icon
+    margin-right: 10px
+    color: $cyan
+
+.ui-accordion-header-active
+    .accordion__icon
+        .fas
+            color: #fff
+
+.ui-accordion .ui-accordion-content
+    color: $textColor
+
+.ui-accordion-content .ui-corner-bottom .ui-helper-reset .ui-widget-content
+    height: auto
+
+
+// Section Advantages
+
+.advantages
+    margin-top: 0
+
+.advantages__item
+    background-repeat: no-repeat
+    background-position: center top
+    padding-top: 80px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-title
+        text-align: center
+        font-size: 1.5rem
+        font-weight: 900
+        color: $textColor
+        margin: 0
+    &-description
+        text-align: center
+        font-size: .9rem
+        font-weight: 400
+        color: $textColor
+
+
+// Section Products
+
+.products__gallery
+    display: flex
+    flex-wrap: wrap
+    transition: all .5s;
+
+.products__gallery-item
+    width: 370px
+    height: 410px
+    overflow: hidden
+    // width: 100%;
+    // height: 100%;
+    img
+        -moz-transition: all 1s ease-out
+        -o-transition: all 1s ease-out
+        -webkit-transition: all 1s ease-out
+        max-height: 410px
+        &:hover
+            -webkit-transform: scale(1.2)
+            -moz-transform: scale(1.2)
+            -o-transform: scale(1.2)
+        
+
+// Section Video
+
+.video
+    .slick-initialized .slick-slide
+        height: auto
+    
+
+.slick-initialized .slick-slide 
+    display: flex !important
+    justify-content: center !important
+
+.slick-next::before
+    content: '\f105'
+    font-family: 'Font Awesome'
+    
+.slick-prev::before
+    content: '\f104'
+    font-family: 'Font Awesome'
+.slick-prev::before, .slick-next::before
+    color: $accent
+    font-size: 2rem
+
+
+
+
+
+
+//Map
+
+.our-map
+    height: 600px
+    margin: 0
+    padding: 0
+    
+//Footer
+
+.footer
+    background: url('../img/footer-bg-new.jpg') no-repeat
+    background-position-x: left
+    background-position-y: bottom
+    min-height: 480px
+    width: 100%
+    position: relative
+    padding: 85px 0
+    // &__overlay
+    //     background-color: rgba(0,158,224,0.6)
+    //     position: absolute
+    //     left: 0
+    //     top: 0
+    //     min-height: 520px
+    //     z-index: 2
+    //     display: block
+    //     width: 100%
+        // padding: 0 0 80px 0
+    &__wrapper
+        position: relative
+        z-index: 3
+        width: 100%
+    &__logo
+        display: flex
+        &-link
+            // padding: 17px 26px
+            // background-color: #ffffff
+    // &__nav-products
+    //     padding-top: 78px
+    // &__nav-contacts
+    //     padding-top: 78px
+    &__nav-menu
+        margin: 0
+        padding: 0
+        line-height: 2.25rem
+    &__nav-item
+        display: block
+        width: 100%
+        font-size: 0.9rem
+        padding-left: 5px
+        a
+            text-decoration: none
+            color: rgba(255,255,255,.75)
+            // &:hover
+            //     color: rgba(255, 255, 255, 1)
+        
+    &__nav-item:first-child a
+        text-transform: uppercase        
+        font-weight: 700
+        color: rgba(255,255,255,1)
+
+.footer__nav-contacts
+    .footer__nav-menu
+        .footer__nav-item
+            margin-left: -10px
+            &:nth-child(2):before
+                content: '\f3c5'
+                font-family: 'Font Awesome'
+                //margin-left: -10px
+                color: rgba(255, 255, 255, .75)
+                // &:hover
+                //     color: rgba(255, 255, 255, 1)
+            // &:nth-child(2)
+            //     margin-left: 0
+            //     a
+            //         padding-left: 15px
+            &:nth-child(3):before, &:nth-child(4):before
+                content: '\f095'
+                font-family: 'Font Awesome'
+                //margin-right: 5px
+                color: rgba(255, 255, 255, .75)
+            &:nth-child(5) a
+                margin-right: 19px
+                font-size: 14px
+            a
+                padding-left: 10px
+            &:last-child
+                margin-left: -16px
+                margin-top: 34px
+                a
+                    font-size: 1.2rem
+                    transition: all .3s ease
+                    &:hover
+                        color: rgba(255, 255, 255, 1)
+label
+        display: block
+        text-align: left
+        font-size: 14px            
+
+.footer__form
+    // margin-top: 78px
+    // margin-bottom: 10px
+    padding: 32px 25px
+    background-color: #fff
+    
+    &-title
+        font-size: 18px
+        font-weight: 900
+        text-align: center
+        color: $lightAccent
+        display: flex
+        justify-content: center
+    &-subtitle
+        font-size: 14px
+        // font-weight: 400
+        // display: flex
+        // justify-content: center
+        text-align: center
+        color: $textColor
+        span
+            font-size: 18px
+            font-weight: 900
+            color: $lightAccent
+    &-name, &-email, &-message
+        display: flex
+        flex-direction: column
+        margin: 5px 0
+        width: 100%
+        font-size: 14px
+        font-weight: 500
+        color: $textColor
+    input, textarea
+        width: 100%
+        border: none
+        outline: none
+        resize: none
+        border-bottom: 1px solid #979b9f
+        color: $textColor
+        font-size: 14px
+        margin-bottom: 15px
+        padding: 5px 5px
+        &::placeholder
+            font-size: 14px
+            color: rgba(0, 0, 0, .45)
+    
+
+    &-btn
+        width: 100%
+        background-color: transparent
+        border: 1px solid $lightAccent
+        outline: none
+        color: $lightAccent
+        font-size: 0.875rem
+        text-transform: uppercase   
+        font-weight: 900
+        line-height: 2.1875rem
+        letter-spacing: 0.12rem
+        cursor: pointer
+        margin-top: 15px
+        &:hover, &:focus, &:active
+            background-color: $lightAccent
+            color: #ffffff
+            transition: all .25s 
+    
+
+.copyright
+    font-size: .75rem
+    color: #fff
+    font-weight: 400
+    position: relative
+    bottom: 18px
+    .artjetfly
+        display: inline
+    .freestyle
+        display: inline
+        &__link
+            border-bottom: 1px solid #fff
+            a
+                text-decoration: none
+                color: #ffffff
+
+@import '../css/media.min'
+//@import '../css/animate'
+
+        
+        
+
+    
+
