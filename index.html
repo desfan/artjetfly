@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ArtJetFly</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link href="css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="css/fontawesome.solid.min.css" rel="stylesheet">
+  <link href="css/fontawesome.min.css" rel="stylesheet"> -->
+  <!-- <link href="css/jquery.fancybox.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+  <link href="css/hamburgers.css" rel="stylesheet">
+  <!-- <link href="css/mmenu-light.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+
+  
+
+  <header class="header" id="header">
+      
+      <!-- begin button to top -->
+      <a id="button"></a> 
+      <!-- end button to top -->
+    <div class="header__top header__top-contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 d-none d-sm-block">
+            <div class="header__phone">
+              <div class="phone">
+                <a href="tel:+380660211998"><span><i class="fas fa-phone"></i></span>+38 (066) 021-19-98</a>
+              </div>
+              <div class="phone">
+                <a href="tel:+380662767556"><span><i class="fas fa-phone"></i></span>+38 (066) 276-75-56 </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+            <div class="header__location">
+              <a href="#"><span><i class="fas fa-map-marker-alt"></i></span>Украина, г. Кропивницкий, ул. Серова, 25</a>
+            </div>
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 d-none d-sm-block">
+            <div class="header__social">
+              <a href="#"><span><i class="fab fa-facebook-f"></i></span></a>
+              <a href="#"><span></span><i class="fab fa-instagram"></i></span></a>
+              <a href="#"><span></span><i class="fab fa-youtube"></i></span></a>
+            </div>
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-12">
+            <div class="header__language">
+              <a href="#"><span><i class="fas fa-globe-asia"></i></span>Ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+     
+      <nav class="header__nav" id="sticker">
+        <div class="container" style="position: relative">
+          <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4 d-flex align-items-center">
+              <a class="header__logo" href="#"><img src="img/logo-blue.png" alt="ArtJetFly"></a>
+            </div>
+            <!-- <button class="header__nav-btn">
+              <i class="fas fa-bars"></i>
+            </button> -->
+            <div class="col-xl-5 col-lg-7 col-md-6 d-sm-none d-none d-md-block align-items-center align-items-center">
+              
+              <div id="sticker" class="header__menu">
+                <ul class="header__menu-items">
+                  <li class="header__menu-item"><a href="#applying">Применение</a></li>
+                  <li class="header__menu-item"><a href="#advantages">Преимущества</a></li>
+                  <li class="header__menu-item"><a href="#products">Продукция</a></li>
+                  <li class="header__menu-item"><a href="#footer">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7 col-6 d-flex align-items-center">
+              <div class="header__callback">
+                <button data-fancybox data-src="#modal" href="javascript:;" class="header__callback-btn">Напишите нам</button>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="hamburger hamburger--squeeze js-hamburger">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <!-- <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="header__slider">
+      <div class="slider">
+        <div class="slider__item" style="background-image: url(img/bg-1.jpg)">
+
+        </div>
+        <div class="slider__item" style="background-image: url(img/bg-2.jpg)">
+
+        </div>
+        <div class="slider__item" style="background-image: url(img/bg-3.jpg)">
+
+        </div>
+      </div>
+      <div class="offer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="offer">
+                <h1 class="offer__title">Производство изделий<br>из композитных материалов</h1>
+                <div class="offer__description">
+                  Собственное современное производство полного цикла<br>
+                  Изделия любой сложности для всевозможных отраслей
+                </div>
+                <div class="offer__submit">
+                  <button data-fancybox data-src="#modal" href="javascript:;" class="offer__submit-btn">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="applying wow fadeInUp" data-wow-offset="150" id="applying" style="background-image: url(img/boat-bg.jpg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section__title wow fadeInUp" data-wow-delay="0.25s">
+            <h2>Сферы применения композитных материалов</h2>
+          </div>
+          <div class="section__description wow fadeInUp" data-wow-delay="0.75s">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div id="accordion" class="applaying__accordian">
+            <h3 class="wow fadeInUp" data-wow-delay="0.25s"><span class="accordion__icon"><i class="fas fa-home"></i></span>ЖКХ и благоустройство</h3>
+            <div>Производство остановочных комплексов, декоративных цоколей силовых опор.
+              Малые архитектурные формы, павильоны, лавочки, вазоны, урны, таксофоны и многое-многое другое.
+            </div>
+            <h3 class="wow fadeInUp" data-wow-delay="0.5s"><span class="accordion__icon"><i class="fas fa-ship"></i></span>Легкий водный транспорт</h3>
+            <div>Корпусные детали водного транспорта, декоративные панели и панели управления,
+              корпусные элементы, защитные кожухи подвижных частей,
+              нестандартные изделия на заказ
+            </div>
+            <h3 class="wow fadeInUp" data-wow-delay="0.75s"><span class="accordion__icon"><i class="fas fa-industry"></i></span>Промышленность</h3>
+            <div>Емкости различных форм и назначения, газо- и воздуховоды, капле- и брызгоулавливатели,
+              защитные кожухи, выхлопные трубы, вытяжные вентиляции и нестандартное оборудование на заказ
+            </div>
+            <h3 class="wow fadeInUp" data-wow-delay="1s"><span class="accordion__icon"><i class="fas fa-car"></i></span>Машиностроение</h3>
+            <div>Корпусные детали машин, декоративные панели и панели управления, кузовные элементы,
+              защитные кожухи подвижных частей машин, нестандартные изделия на заказ.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section__title wow fadeInUp" data-wow-delay="0.25s">
+            <h2>Наши преимущества</h2>
+          </div>
+          <div class="section__description wow fadeInUp" data-wow-delay="0.75s">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="advantages__items">
+            <div class="advantages__item wow fadeInUp" data-wow-delay="0.25s" style="background-image: url(img/icons/advantages-icon-1.svg)">
+              <h4 class="advantages__item-title wow fadeInUp">Производство</h4>
+              <p class="advantages__item-description wow fadeInUp">
+                Собственное современное производство полного цикла
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="advantages__items">
+            <div class="advantages__item wow fadeInUp"  data-wow-delay="0.5s" style="background-image: url(img/icons/advantages-icon-2.svg)">
+              <h4 class="advantages__item-title wow fadeInUp">Технологии</h4>
+              <p class="advantages__item-description wow fadeInUp">
+                Уникальные технологии изготовления
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="advantages__items">
+            <div class="advantages__item wow fadeInUp"  data-wow-delay="0.75s" style="background-image: url(img/icons/advantages-icon-3.svg)">
+              <h4 class="advantages__item-title wow fadeInUp">Качество</h4>
+              <p class="advantages__item-description wow fadeInUp">
+                Многоступенчатый контроль качества
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="advantages__items">
+            <div class="advantages__item wow fadeInUp"  data-wow-delay="1s" style="background-image: url(img/icons/advantages-icon-4.svg)">
+              <h4 class="advantages__item-title wow fadeInUp" data-wow-offset="150">Гарантия</h4>
+              <p class="advantages__item-description wow fadeInUp" data-wow-offset="150">
+                Полная гарантия на продукцию до 30 лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section__title wow fadeInUp"  class="wow fadeInUp" data-wow-delay="0.25s">
+            <h2>Наша продукция</h2>
+          </div>
+          <div class="section__description wow fadeInUp" class="wow fadeInUp" data-wow-delay="0.5s">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="products__gallery">
+        <a href="img/gallery/img-1.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-1.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-2.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-2.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-3.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-3.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-4.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-4.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-5.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-5.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-6.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-6.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-7.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-7.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-8.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-8.jpg" alt="catamaran"></a>
+        <a href="img/gallery/img-9.jpg" class="products__gallery-item wow fadeInUp" data-wow-delay="0.25s"><img src="img/gallery/img-9.jpg" alt="catamaran"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section__title wow fadeInUp" data-wow-delay="0.25s">
+            <h2>Наше видео</h2>
+          </div>
+          <div class="section__description wow fadeInUp" data-wow-delay="0.5s">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="video__slider wow fadeInUp" data-wow-delay="0.5s">
+            <div class="video">
+              <iframe width="640" height="360" src="https://www.youtube.com/embed/telxQ1OBGMw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe width="640" height="360" src="https://www.youtube.com/embed/telxQ1OBGMw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="map wow fadeInLeft" data-wow-offset="150" id="map">
+    <div class="our-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84568.1881795212!2d32.14562324919831!3d48.51874425671116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d0432708441b67%3A0xe828c54149a0e8d8!2z0JrRgNC-0L_QuNCy0L3QuMyB0YbQutC40LksINCa0LjRgNC-0LLQvtCz0YDQsNC00YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDI1MDAw!5e0!3m2!1sru!2sua!4v1565089257711!5m2!1sru!2sua"
+        width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#"><img src="img/logo-white.png" alt="ArtJetFly"></a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+          <div class="footer__nav-products">
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a href="#">Продукция</a></li>
+              <li class="footer__nav-item"><a href="#">Катамараны</a></li>
+              <li class="footer__nav-item"><a href="#">Флайборды</a></li>
+              <li class="footer__nav-item"><a href="#">Лодки</a></li>
+              <li class="footer__nav-item"><a href="#">Обвесы для авто</a></li>
+              <li class="footer__nav-item"><a href="#">Емкости</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-4 d-none d-md-block">
+          <div class="footer__nav-contacts">
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a href="#">Контакты</a></li>
+              <li class="footer__nav-item"><a href="#">Украина, г. Кропивницкий, ул. Серова, 25</a></li>
+              <li class="footer__nav-item"><a href="#">+38 (066) 021-19-98</a></li>
+              <li class="footer__nav-item"><a href="#">+38 (066) 276-75-56 </a></li>
+              <li class="footer__nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-5">
+          <div class="footer__form">
+            <form action="" class="form">
+              <label class="footer__form-title" for="">Готовы обсудить Ваш проект?</label>
+              <label class="footer__form-subtitle" for="">Наш технический специалист свяжется с Вами и проконсультирует <span>бесплатно!</span></label>
+              <label class="footer__form-name" for="name">Ваше имя:</label>
+              <input type="name" placeholder="Введите Ваше имя" required>
+              <label class="footer__form-email" for="email">Ваш E-mail</label>
+              <input type="email" placeholder="Введите Ваш E-mail" required>
+              <label class="footer__form-message" for="message">Ваше сообщение</label>
+              <textarea type="textarea" rows="2" placeholder="Введите Ваше сообщение" required></textarea>                
+              <button class="footer__form-btn" type="submit">Отправить сообщение</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="copyright">
+            <p class="artjetfly">ArtJetFly, 2019 © Все права защищены.</p>  <p class="freestyle">Разработка: <span class="freestyle__link"><a href="https://freestyleweb.github.io">Freestyle Web Studio</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal">
+    <form class="modal__form footer__form">
+      <label class="footer__form-title" for="">Готовы обсудить Ваш проект?</label>
+      <label class="footer__form-subtitle" for="">Наш технический специалист свяжется с Вами и проконсультирует <span>бесплатно!</span></label>
+      <label class="footer__form-name" for="name">Ваше имя:</label>
+      <input type="text" name="name" placeholder="Введите Ваше имя" required>
+      <label class="footer__form-email" for="email">Ваш E-mail</label>
+      <input type="email" name="email" placeholder="Введите Ваш E-mail" required>
+      <label class="footer__form-message" for="message">Ваше сообщение</label>
+      <textarea type="textarea" rows="2" placeholder="Введите Ваше сообщение" required></textarea>                
+      <button class="footer__form-btn" type="submit">Отправить сообщение</button>
+    </form>
+  </div>
+
+
+
+  <!-- <script src="js/libs.min.js" defer></script> -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <!-- <script src="js/mmenu-light.js"></script> -->
+  <script src="js/main.js"></script>
+
+  <script>
+
+    new WOW().init();
+
+    
+
+
+  </script>
+
+</body>
+
+</html>
