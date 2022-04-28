@@ -1,3 +1,20 @@
+const mobileMenuButton = document.querySelector('.header__nav-btn'),
+      mobileMenu = document.querySelector('.mobile-menu');
+
+if (mobileMenuButton) {
+  mobileMenuButton.addEventListener('click', function() {
+    mobileMenu.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+  });
+}
+
+
+
+
+
+
+
+
 $('.slider').slick({
   autoplay: true,
   dots: false,
@@ -8,13 +25,7 @@ $('.slider').slick({
   cssEase: 'linear'
 });
 
-
-
   var btn = $('#button');
-
- 
-
-
 
 $(document).ready(function(){  
 
@@ -39,7 +50,6 @@ $(document).ready(function(){
       }]       
   });
 
-
   $('.products__gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -60,7 +70,6 @@ $(document).ready(function(){
     
   });
 
-
   $( function() {
     var icons = {
       header: "ui-icon-home",
@@ -76,4 +85,4 @@ $(document).ready(function(){
         $( "#accordion" ).accordion( "option", "icons", icons );
       }
     });
-  } );
+  });
