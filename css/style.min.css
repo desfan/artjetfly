@@ -8585,10 +8585,7 @@ label {
         width: 100%;
         margin: 0 auto
     }
-    .footer {
-        padding-bottom: 120px 0 68px 0;
-        margin-top: -60px;
-    }
+
     .footer__logo {
         margin-bottom: 30px
     }
@@ -8635,6 +8632,10 @@ label {
         font-size: 24px;
         text-transform: uppercase;
         font-weight: bold;
+    }
+    .footer {
+        padding: 120px 0 68px 0;
+        margin-top: -60px;
     }
 }
 
@@ -8689,6 +8690,10 @@ label {
     .copyright .artjetfly {
         display: block;
         margin: 0
+    }
+    .footer {
+        padding: 120px 0 68px 0;
+        margin-top: -60px;
     }
 }
 
