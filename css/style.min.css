@@ -8742,6 +8742,10 @@ label {
     .header__slider .offer__description {
         font-size: 1.25rem
     }
+    .footer {
+        padding: 120px 0 68px 0;
+        margin-top: -60px;
+    }
 }
 
 .active {
