@@ -13,6 +13,7 @@ if (mobileMenu) {
   for (let i = 0; i < mobileMenuLink.length; i++) {
     mobileMenuLink[i].addEventListener('click', function(){
       mobileMenu.classList.remove('active');
+      document.body.classList.remove('no-scroll');
     })
   }
 }
