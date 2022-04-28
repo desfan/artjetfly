@@ -1,11 +1,20 @@
 const mobileMenuButton = document.querySelector('.header__nav-btn'),
-      mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenu = document.querySelector('.mobile-menu'),
+      mobileMenuLink = document.querySelectorAll('.mobile-menu__item > a');
 
 if (mobileMenuButton) {
   mobileMenuButton.addEventListener('click', function() {
     mobileMenu.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
   });
+}
+
+if (mobileMenu) {
+  for (let i = 0; i < mobileMenuLink.length; i++) {
+    mobileMenuLink[i].addEventListener('click', function(){
+      mobileMenu.classList.remove('active');
+    })
+  }
 }
 
 
