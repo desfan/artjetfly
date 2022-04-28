@@ -8586,7 +8586,8 @@ label {
         margin: 0 auto
     }
     .footer {
-        padding-bottom: 68px
+        padding-bottom: 120px 0 68px 0;
+        margin-top: -60px;
     }
     .footer__logo {
         margin-bottom: 30px
